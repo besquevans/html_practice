@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!------
+    tr*4>td{data}*3
+  -->
+
+  <table width="500" border="3">
+    <caption>表格標題</caption>
+    <thead>
+      <tr>
+        <th scope="col">姓名</th>
+        <th scope="col">國文</th>
+        <th scope="col">英文</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">小明</th>
+        <td>data</td>
+        <td rowspan="2">data</td>
+        <!-- rowspan 上下跨列-->
+      </tr>
+      <tr>
+        <th scope="row">小美</th>
+        <td>data</td>
+      </tr>
+      <tr>
+        <th scope="row">小華</th>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">ff</td>
+        <!-- colspan 左右跨欄位-->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

@@ -11,9 +11,93 @@
       padding: 0;
     }
 
-    img {
+    .banner img,
+    .products img,
+    .item img {
       width: 100%;
       vertical-align: bottom;
+    }
+
+
+    #menu_control {
+      position: absolute;
+      z-index: -2;
+      opacity: 0;
+    }
+
+    .header {
+      height: 50px;
+      background-color: #ccc;
+      position: relative;
+    }
+
+    .logo {
+      height: 60px;
+      height: 40px;
+      margin-left: 10px;
+    }
+
+    .logo a {
+      display: block;
+      height: 40px;
+    }
+
+    .logo img {
+      display: block;
+    }
+
+    .menu_btn {
+      width: 40px;
+      height: 40px;
+      background-color: #000;
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+
+    .menu_btn span {
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+      display: block;
+      overflow: hidden;
+    }
+
+    .menu_btn::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 2px;
+      width: 36px;
+      background-color: #aaa;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      box-shadow: 0 8px 0 #aaa,
+        0 -8px 0 #aaa;
+    }
+
+    nav {
+      width: 80%;
+      height: calc(100vh - 50px);
+      background-color: #223;
+      position: absolute;
+      top: 50px;
+      left: -100%;
+      transition: .5s;
+    }
+
+    nav a {
+      display: block;
+      text-decoration: none;
+      color: #aec;
+      padding: 10px 20px;
+      border-bottom: 1px solid #aec;
+    }
+
+    #menu_control:checked~.header nav {
+      left: 0;
     }
 
     .item-group {
@@ -53,38 +137,6 @@
       font-size: 16px;
     }
 
-
-    .header {
-      display: flex;
-      background-color: #000;
-    }
-
-    .header .logo {
-      display: inline-block;
-      margin: auto 0;
-    }
-
-    .header nav {
-      text-align: right;
-      width: 100%;
-      font-size: 0;
-    }
-
-    .header nav a {
-      color: #ffffff;
-      font-size: 22px;
-      line-height: 52px;
-      text-decoration: none;
-      display: inline-block;
-      padding: 0 10px;
-      transition: all .7s;
-    }
-
-    .header nav a:hover {
-      background-color: #ff0;
-      color: #000000;
-    }
-
     .about {
       margin: 0 auto;
     }
@@ -115,6 +167,44 @@
 
     /* 電腦介面 */
     @media screen and (min-width: 768px) {
+      .menu_btn {
+        display: none;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #222;
+        align-items: center;
+      }
+
+      nav {
+        position: relative;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: 100%;
+        top: 0;
+        background-color: transparent;
+        /* transparent = 透明 */
+      }
+
+      nav a {
+        border-bottom: none;
+        transition: .5s;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      nav a:hover {
+        background-color: #faa;
+        color: #222;
+      }
+
       .item-group {
         display: flex;
         justify-content: center;
@@ -141,17 +231,23 @@
 </head>
 
 <body>
+  <input type="checkbox" name="" id="menu_control">
   <div class="header">
-    <a class="logo" href="#">
-      <img src="https://picsum.photos/80/40/?random=1">
-    </a>
-
+    <h1 class="logo">
+      <a href="#">
+        <img src="https://picsum.photos/60/40/?random=1">
+      </a>
+    </h1>
+    <label for="menu_control" class="menu_btn">
+      <span>選單</span>
+    </label>
     <nav>
-      <a href="#">aaaa</a>
-      <a href="#">aaaa</a>
-      <a href="#">aaaa</a>
-      <a href="#">aaaa</a>
-      <a href="#">aaaa</a>
+      <a href="">link</a>
+      <a href="">link</a>
+      <a href="">link</a>
+      <a href="">link</a>
+      <a href="">link</a>
+      <a href="">link</a>
     </nav>
   </div>
 

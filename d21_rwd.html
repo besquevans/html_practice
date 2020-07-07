@@ -16,6 +16,44 @@
       vertical-align: bottom;
     }
 
+
+    .item-group {
+      width: 100%;
+      margin: auto;
+      max-width: 1440px;
+    }
+
+    .item {
+      text-align: center;
+      margin: 0 10px 20px;
+    }
+
+    .title {
+      margin: 0 0 20px;
+      padding: 30px 10px;
+      background-color: #ccc;
+    }
+
+    .title h2 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .title p {
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .item h2 {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .item p {
+      font-size: 16px;
+    }
+
+
     .header {
       display: flex;
       background-color: #000;
@@ -49,41 +87,7 @@
 
     .about {
       margin: 0 auto;
-      padding: 60px 30px;
-    }
-
-    .title {
-      text-align: center;
-      margin: 10px 0 20px;
-    }
-
-    .wrap .item {
-      text-align: center;
-      margin: 0 10px 40px;
-    }
-
-    .wrap .item img {
-      width: 100%;
-    }
-
-    .about h2,
-    .service h2,
-    .products h2 {
-      font-size: 40px;
-    }
-
-    .about p,
-    .service p,
-    .products p {
-      font-size: 22px;
-    }
-
-    .item h2 {
-      font-size: 32px;
-    }
-
-    .item p {
-      font-size: 16px;
+      padding: 60px 0;
     }
 
     .products {
@@ -101,13 +105,12 @@
       background-color: #333;
       color: #aaa;
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0;
     }
 
     @media screen and (min-width: 768px) {
-      .wrap {
+      .item-group {
         display: flex;
-
         justify-content: center;
       }
 
@@ -149,29 +152,32 @@
   </div>
 
   <div class="about">
-    <div class="title">
-      <h2>About</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iure delectus hic dolores neque fugiat ratione
-        animi consequatur ea vero.</p>
-    </div>
-
     <div class="wrap">
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=2">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
+      <div class="title">
+        <h2>About</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iure delectus hic dolores neque fugiat
+          ratione
+          animi consequatur ea vero.</p>
       </div>
 
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=21">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
-      </div>
+      <div class="item-group">
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=2">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
+        </div>
 
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=22">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=21">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
+        </div>
+
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=22">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, laboriosam.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -187,32 +193,35 @@
     </div>
   </div>
   <div class="service">
-    <div class="title">
-      <h2>Service</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iure delectus hic dolores neque fugiat ratione
-        animi consequatur ea vero.</p>
-    </div>
-
     <div class="wrap">
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=3">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+      <div class="title">
+        <h2>Service</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae iure delectus hic dolores neque fugiat
+          ratione
+          animi consequatur ea vero.</p>
       </div>
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=31">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
-      </div>
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=32">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
-      </div>
-      <div class="item">
-        <img src="https://picsum.photos/200/100/?random=33">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+
+      <div class="item-group">
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=3">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=31">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=32">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/200/100/?random=33">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, praesentium?</p>
+        </div>
       </div>
     </div>
   </div>

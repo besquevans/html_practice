@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div_1 {
+      background-color: #fcc;
+      height: 200px;
+      width: 200px;
+    }
+
+    .div_2 {
+      background-color: #ffc;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div_1">
+    div1
+  </div>
+  <div class="div_2">
+    div2
+  </div>
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.div_1').click(function () {
+        $('.div_2').toggle();
+      })
+    })
+  </script>
+</body>
+
+</html>

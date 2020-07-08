@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrap {
+      background-color: #ccc;
+      padding: 10px;
+      display: flex;
+    }
+
+    .item {
+      width: 0;
+      height: 200px;
+      font-size: 50px;
+      background-color: #fa0;
+      border: 1px solid red;
+    }
+
+    .item1 {
+      flex-grow: 1;
+    }
+
+    .item2 {
+      flex-grow: 1;
+      order: 1;
+    }
+
+    .item3 {
+      flex-grow: 1;
+      order: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+  </div>
+</body>
+
+</html>

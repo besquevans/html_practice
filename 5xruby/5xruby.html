@@ -10,6 +10,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
+      color: #333;
     }
 
     img {
@@ -109,23 +110,23 @@
 
     .item-group {
       display: flex;
+      width: 100%;
     }
 
-    .item {
+    .item-group .item {
       margin: 15px;
+    }
+
+    .item-group>a {
+      text-decoration: none;
     }
 
     .about .item {
       text-align: center;
-      color: #000;
     }
 
     .about .item>* {
       margin-top: 20px;
-    }
-
-    .about a {
-      text-decoration: none;
     }
 
     .about .item img {
@@ -135,17 +136,11 @@
 
     /* lesson */
     .lesson .wrap {
-      display: flex;
       flex-wrap: wrap;
-    }
-
-    .lesson .item-group {
-      width: 100%;
     }
 
     .lesson .item-group>a {
       width: 33.3%;
-      text-decoration: none;
     }
 
     .lesson .item {
@@ -172,7 +167,6 @@
 
     .lesson .content>h3 {
       border-bottom: 1px solid #888;
-
     }
 
     .lesson .content>p {
@@ -404,25 +398,6 @@
               </p>
             </div>
           </a>
-
-          <!-- <div class="item">
-            <img src="https://picsum.photos/150/150/?random=32">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore iste quos, molestiae ea id laudantium!
-            </p>
-          </div>
-          <div class="item">
-            <img src="https://picsum.photos/150/150/?random=33">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore iste quos, molestiae ea id laudantium!
-            </p>
-          </div>
-          <div class="item">
-            <img src="https://picsum.photos/150/150/?random=34">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore iste quos, molestiae ea id laudantium!
-            </p>
-          </div> -->
         </div>
       </div>
     </div>
@@ -507,12 +482,14 @@
   </div>
 
   <div class="understanding">
-    <h2>想更瞭解我們嗎？</h2>
-    <h4>您可以看看常見問題或者直接線上洽詢，會有親切的客服人員回答您的問題，
-      也可以透過社群網站隨時關注我們的動態。</h4>
-    <div class="icon">
-      <a href="#"><img src="https://picsum.photos/80/80/?random=5"></a>
-      <a href="#"><img src="https://picsum.photos/80/80/?random=51"></a>
+    <div class="wrap">
+      <h2>想更瞭解我們嗎？</h2>
+      <h4>您可以看看常見問題或者直接線上洽詢，會有親切的客服人員回答您的問題，
+        也可以透過社群網站隨時關注我們的動態。</h4>
+      <div class="icon">
+        <a href="#"><img src="https://picsum.photos/80/80/?random=5"></a>
+        <a href="#"><img src="https://picsum.photos/80/80/?random=51"></a>
+      </div>
     </div>
   </div>
 
@@ -529,7 +506,7 @@
       <div class="footer-info">
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
@@ -541,7 +518,7 @@
         </div>
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
@@ -551,7 +528,7 @@
         </div>
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
@@ -561,7 +538,7 @@
         </div>
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
@@ -571,7 +548,7 @@
         </div>
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
@@ -581,7 +558,7 @@
         </div>
         <div class="col">
           <ul>
-            <li><a href="#"><strong>Title</strong></a></li>
+            <li><strong>Title</strong></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>
             <li><a href="#">lorem</a></li>

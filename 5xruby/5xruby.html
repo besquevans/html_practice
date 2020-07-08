@@ -10,7 +10,7 @@
       padding: 0;
       margin: 0;
       list-style: none;
-      color: #333;
+      color: #777;
     }
 
     img {
@@ -30,6 +30,46 @@
       margin: auto;
     }
 
+    .about,
+    .recommend,
+    .footer {
+      background-color: #eee;
+    }
+
+    .wrap {
+      padding: 30px 0;
+    }
+
+    .title {
+      text-align: center;
+      margin: auto;
+      padding: 20px 0;
+      width: 100%;
+    }
+
+    .wrap .title::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: red;
+      margin: 30px auto;
+    }
+
+    .item-group {
+      display: flex;
+      width: 100%;
+    }
+
+    .item-group .item {
+      margin: 15px;
+    }
+
+    .item-group>a {
+      text-decoration: none;
+    }
+
+    /* header */
     .header {
       background-color: #fff;
       width: 100%;
@@ -77,50 +117,12 @@
       color: red;
     }
 
+    /* banner */
     .banner {
       margin-top: 70px;
     }
 
     /* about */
-    .about,
-    .recommend,
-    .footer {
-      background-color: #eee;
-    }
-
-    .wrap {
-      padding: 30px 0;
-    }
-
-    .title {
-      text-align: center;
-      margin: auto;
-      padding: 20px 0;
-      width: 100%;
-    }
-
-    .wrap .title::after {
-      content: '';
-      display: block;
-      width: 100px;
-      height: 4px;
-      background-color: red;
-      margin: 30px auto;
-    }
-
-    .item-group {
-      display: flex;
-      width: 100%;
-    }
-
-    .item-group .item {
-      margin: 15px;
-    }
-
-    .item-group>a {
-      text-decoration: none;
-    }
-
     .about .item {
       text-align: center;
     }
@@ -193,16 +195,14 @@
       width: 100%;
     }
 
-    .lesson .more .more-btn {
+    .lesson .more a {
+      display: block;
       text-align: center;
       background-color: red;
       width: 250px;
       padding: 20px 0;
       border-radius: 10px;
       margin: 50px auto;
-    }
-
-    .lesson .more-btn a {
       color: #fff;
       text-decoration: none;
     }
@@ -353,7 +353,7 @@
   </div>
 
   <div class="banner">
-    <img src="https://picsum.photos/1920/400/?random=2">
+    <img src="https://picsum.photos/1920/500/?random=2">
   </div>
 
   <div class="about">
@@ -454,9 +454,9 @@
         </div>
 
         <div class="more">
-          <div class="more-btn">
-            <a href="">看更多網頁課程</a>
-          </div>
+          <a href="">
+            看更多網頁課程
+          </a>
         </div>
       </div>
     </div>

@@ -19,6 +19,10 @@
       width: 100%;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     .container {
       width: 1200px;
       margin: auto;
@@ -37,7 +41,7 @@
     .title {
       text-align: center;
       margin: auto;
-      padding: 20px 0;
+      padding: 20px 0 0;
       width: 100%;
     }
 
@@ -60,8 +64,11 @@
     }
 
     .item-group>a {
-      text-decoration: none;
       margin: 0 10px;
+    }
+
+    .text-red {
+      color: red;
     }
 
     /* header */
@@ -76,7 +83,6 @@
     }
 
     .header .logo {
-      color: red;
       white-space: nowrap;
       padding: 0 20px;
       margin: auto 0;
@@ -89,7 +95,6 @@
 
     .header .logo span {
       padding: 0 10px;
-      color: red;
     }
 
     .header nav {
@@ -99,7 +104,6 @@
     }
 
     .header a {
-      text-decoration: none;
       color: #333;
       display: inline-block;
       height: 70px;
@@ -200,7 +204,6 @@
       border-radius: 10px;
       margin: 50px auto;
       color: #fff;
-      text-decoration: none;
     }
 
     /* recommend */
@@ -222,7 +225,6 @@
     }
 
     .recommend .detail h3 {
-      color: red;
       padding: 10px 0;
     }
 
@@ -256,7 +258,6 @@
     }
 
     .footer a {
-      text-decoration: none;
       color: #222;
       font-size: 14px;
     }
@@ -342,7 +343,7 @@
     <div class="logo">
       <a href="#">
         <img src="https://picsum.photos/93/24/?random=1">
-        <span>專業程式教育機構</span>
+        <span class="text-red">專業程式教育機構</span>
       </a>
     </div>
     <nav>
@@ -356,7 +357,7 @@
   </div>
 
   <div class="banner">
-    <img src="https://picsum.photos/1920/500/?random=2">
+    <img src="https://picsum.photos/1920/600/?random=2">
   </div>
 
   <div class="about">
@@ -475,7 +476,7 @@
           </div>
           <div class="detail">
             <p>創意降低遇到任何翻譯房產讓我們口氣資料金屬跟着一隻複雜圖書館，以便區域收益對話圍繞環境所說你要，站。</p>
-            <h3>Name</h3>
+            <h3 class="text-red">Name</h3>
             <p>進步自從咖啡施工圍繞四周版主，升級手裡。</p>
           </div>
         </div>
@@ -487,8 +488,8 @@
   <div class="understanding">
     <div class="wrap">
       <h2>想更瞭解我們嗎？</h2>
-      <h4>您可以看看常見問題或者直接線上洽詢，會有親切的客服人員回答您的問題，
-        也可以透過社群網站隨時關注我們的動態。</h4>
+      <h4>您可以看看<a class="text-red" href="#">常見問題</a>或者直接<a class="text-red" href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，</h4>
+      <h4>也可以透過社群網站隨時關注我們的動態。</h4>
       <div class="icon">
         <a href="#"><img src="https://picsum.photos/80/80/?random=5"></a>
         <a href="#"><img src="https://picsum.photos/80/80/?random=51"></a>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 微軟正黑體, arial;
+    }
+
+    img {
+      vertical-align: bottom;
+    }
+
+    .item {
+      width: 960px;
+      margin: 100px auto 250px;
+      outline: 3px solid #afa;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .info {
+      width: 350px;
+      color: #fff;
+    }
+
+    .info-title {
+      height: 130px;
+      background-color: red;
+      font-size: 30px;
+    }
+
+    .info-title span {
+      writing-mode: vertical-lr;
+      font-size: 90px;
+      margin-top: 10px;
+      margin-left: -18px;
+    }
+
+    .info-txt {
+      background-color: #000;
+      position: relative;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      top: -465px;
+    }
+
+    .info-txt h3 {
+      font-size: 26px;
+    }
+
+    .info-txt p {
+      margin: 10px 0 20px;
+    }
+
+    .pic {
+      z-index: -1;
+      position: relative;
+    }
+
+    .play {
+      width: 60px;
+      height: 35px;
+      background-color: red;
+      position: relative;
+      top: -250px;
+    }
+
+    .play::after {
+      content: '';
+      display: block;
+      border-color: transparent transparent transparent #fff;
+      border-style: solid solid solid solid;
+      border-width: 12px;
+      position: relative;
+      left: 25px;
+      top: 5px;
+    }
+
+    .revolution {
+      width: 680px;
+      background-color: #ccc;
+      padding: 10px 20px;
+      position: absolute;
+      top: 0;
+    }
+
+    .revolution .title {
+      color: red;
+    }
+
+    .revolution .title::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background-color: red;
+      position: relative;
+      bottom: 13px;
+      left: 170px;
+      width: 500px;
+    }
+
+    .revolution .point {
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px 0;
+    }
+
+    .gray-block {
+      background-color: #ccc;
+      width: 450px;
+      height: 250px;
+      z-index: -2;
+      position: absolute;
+      top: 0;
+    }
+
+    /*flex-start-----------------------*/
+    .flex-start .pic {
+      left: 170px;
+    }
+
+    .flex-start .play {
+      left: 650px;
+    }
+
+    .flex-start .revolution {
+      margin-top: 540px;
+      margin-left: 50px;
+    }
+
+    .flex-start .gray-block {
+      margin-top: 80px;
+      margin-left: 510px;
+    }
+
+    /*flex-end---------------------*/
+    .flex-end {
+      align-items: flex-end;
+    }
+
+    .flex-end .pic {
+      right: 260px;
+    }
+
+    .flex-end .play {
+      left: -10px;
+    }
+
+    .flex-end .revolution {
+      margin-top: 540px;
+    }
+
+    .flex-end .gray-block {
+      margin-top: 80px;
+      margin-left: -200px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="item item1 flex-start">
+    <div class="info info-title">
+      <h1><span>01</span>調節其實</h1>
+    </div>
+
+    <div class="pic">
+      <img src="https://picsum.photos/700/430/?random=1">
+      <div class="play"></div>
+    </div>
+
+    <div class="info info-txt">
+      <h3>還可以生意，個人</h3>
+      <p>億元花園和平許多選單負責評估我愛，夫人此處提前高校春節目的，有天花蓮不限某些工作微笑時刻，連載品牌擴大數碼相。</p>
+    </div>
+
+    <div class="revolution">
+      <h4 class="title">公斤說了過來，制定取</h4>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+    </div>
+
+    <div class="gray-block"></div>
+  </div>
+
+
+  <div class="item item2 flex-end">
+    <div class="info info-title">
+      <h1><span>02</span>調節其實</h1>
+    </div>
+
+    <div class="pic">
+      <img src="https://picsum.photos/700/430/?random=1">
+      <div class="play"></div>
+    </div>
+
+    <div class="info info-txt">
+      <h3>還可以生意，個人</h3>
+      <p>億元花園和平許多選單負責評估我愛，夫人此處提前高校春節目的，有天花蓮不限某些工作微笑時刻，連載品牌擴大數碼相。</p>
+    </div>
+
+    <div class="revolution">
+      <h4 class="title">公斤說了過來，制定取</h4>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+    </div>
+
+    <div class="gray-block"></div>
+  </div>
+
+  <div class="item item3 flex-start">
+    <div class="info info-title">
+      <h1><span>03</span>調節其實</h1>
+    </div>
+
+    <div class="pic">
+      <img src="https://picsum.photos/700/430/?random=1">
+      <div class="play"></div>
+    </div>
+
+    <div class="info info-txt">
+      <h3>還可以生意，個人</h3>
+      <p>億元花園和平許多選單負責評估我愛，夫人此處提前高校春節目的，有天花蓮不限某些工作微笑時刻，連載品牌擴大數碼相。</p>
+    </div>
+
+    <div class="revolution">
+      <h4 class="title">公斤說了過來，制定取</h4>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+    </div>
+
+    <div class="gray-block"></div>
+  </div>
+
+
+  <div class="item item4 flex-end">
+    <div class="info info-title">
+      <h1><span>04</span>調節其實</h1>
+    </div>
+
+    <div class="pic">
+      <img src="https://picsum.photos/700/430/?random=1">
+      <div class="play"></div>
+    </div>
+
+    <div class="info info-txt">
+      <h3>還可以生意，個人</h3>
+      <p>億元花園和平許多選單負責評估我愛，夫人此處提前高校春節目的，有天花蓮不限某些工作微笑時刻，連載品牌擴大數碼相。</p>
+    </div>
+
+    <div class="revolution">
+      <h4 class="title">公斤說了過來，制定取</h4>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+    </div>
+
+    <div class="gray-block"></div>
+  </div>
+
+  <div class="item item5 flex-start">
+    <div class="info info-title">
+      <h1><span>05</span>調節其實</h1>
+    </div>
+
+    <div class="pic">
+      <img src="https://picsum.photos/700/430/?random=1">
+      <div class="play"></div>
+    </div>
+
+    <div class="info info-txt">
+      <h3>還可以生意，個人</h3>
+      <p>億元花園和平許多選單負責評估我愛，夫人此處提前高校春節目的，有天花蓮不限某些工作微笑時刻，連載品牌擴大數碼相。</p>
+    </div>
+
+    <div class="revolution">
+      <h4 class="title">公斤說了過來，制定取</h4>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+      <h4 class="point">回覆加拿大其</h4>
+      <p>母親行業主流果然引進導航招聘驚人尊重正確比較包裝頭髮，位於地址，經過至今我愛緩緩聽說我覺得衛生是啊出售，兄弟在這裡，儘。</p>
+    </div>
+
+    <div class="gray-block"></div>
+  </div>
+</body>
+
+</html>

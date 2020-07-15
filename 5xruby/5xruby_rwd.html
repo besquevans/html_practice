@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/grid.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      vertical-align: bottom;
+    }
+
+    .header,
+    .footer {
+      padding: 0 15px;
+    }
+
+    .about,
+    .hot,
+    .web-class,
+    .understanding {
+      padding: 50px 0;
+    }
+
+    .about,
+    .web-class,
+    .footer {
+      background-color: #eee;
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 50px 0;
+    }
+
+    .main-title:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: red;
+      margin: 20px auto;
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .item .title {
+      font-size: 24px;
+    }
+
+    /*    header-----------------------------*/
+    .header {
+      height: 70px;
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .header .row {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    /*banner----------------------*/
+    .banner {
+      margin-top: 70px;
+    }
+
+    .banner img,
+    .item img,
+    .hot img,
+    .web-class img,
+    .understanding img {
+      width: 100%;
+    }
+
+    /*    about-----------------------------*/
+
+
+    /*    hot-----------------------------*/
+    .hot .btn-more {
+      margin-top: 50px;
+    }
+
+    .btn-more a {
+      text-align: center;
+      display: block;
+      width: 20%;
+      margin: auto;
+      background-color: red;
+      color: #fff;
+      padding: 20px 5px;
+      border-radius: 10px;
+    }
+
+    /*    web-class-----------------------------*/
+    /*    understanding-----------------------------*/
+    .understanding {
+      text-align: center;
+    }
+
+    .understanding .title {
+      margin-bottom: 20px;
+    }
+
+    .understanding p {
+      margin-bottom: 20px;
+    }
+
+    .understanding span a {
+      color: red;
+    }
+
+    .icon {
+      width: 20%;
+      margin: auto;
+    }
+
+    .icon img {
+      border-radius: 50%;
+      padding: 20px;
+    }
+
+    /*    footer-----------------------------*/
+    .footer {
+      padding: 50px 0;
+    }
+
+    .red-link {
+      color: #777;
+    }
+
+    .red-link:hover {
+      color: red;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="header">
+    <div class="row">
+      <div class="logo">
+        <img src='https://picsum.photos/100/30/?random=1'>
+        <span>危機抓住網址，習慣近</span>
+      </div>
+
+      <nav>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+        <a href="#" class="red-link">天下組圖</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="banner">
+    <img src='https://picsum.photos/1450/500/?random=2'>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-title">關於五倍紅寶石</h2>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=31'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=32'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=33'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=34'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hot">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-title">熱門網頁設計課程推薦</h2>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=1'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=1'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src='https://picsum.photos/300/200/?random=1'>
+            <div class="title">人生各類工業地圖講話，說</div>
+            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="btn-more">
+            <a href="#">
+              <span>看更多網頁課程</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="web-class">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-title">網頁課程推薦</h2>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="pic">
+            <img src='https://picsum.photos/300/200/?random=1'>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="web-txt">
+            <p>晚上帶著把它團結廣場金額一名對著評論背景就能掌握，寵物行情，作用打擊，那天好處通用，夢幻不知，對他。</p>
+            <h3>此處試試</h3>
+            <p>權力分類漢化優化，國</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="understanding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title">想更瞭解我們嗎？</h2>
+          <p>您可以看看<span><a href="#">常見問題</a></span>或者直接<span><a href="#">線上洽詢</a></span>，會有親切的客服人員回答您的問題，</p>
+          <p>也可以透過社群網站隨時關注我們的動態。</p>
+
+          <div class="icon">
+            <div class="row">
+              <div class="col-6">
+                <img src='https://picsum.photos/100/100/?random=1'>
+              </div>
+              <div class="col-6">
+                <img src='https://picsum.photos/100/100/?random=1'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="connent">
+            <img src='https://picsum.photos/100/30/?random=1'>
+            <ul>
+              <a class="red-link" href="#">
+                <li>Lorem ipsum dolor sit.</li>
+              </a>
+              <a class="red-link" href="#">
+                <li>Lorem ipsum dolor sit.</li>
+              </a>
+              <a class="red-link" href="#">
+                <li>Lorem ipsum dolor sit.</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="footer-link">
+            <div class="row">
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-12 col-md-2">
+                <h3 class="title">頭髮主流感</h3>
+                <ul>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                  <a class="red-link" href="#">
+                    <li>中文一股傳</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="copyright">
+            <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

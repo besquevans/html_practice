@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/grid.css">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 微軟正黑體, arial;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+
+    .container {
+      max-width: 1000px;
+    }
+
+    .main-title {
+      color: #fff;
+      position: relative;
+    }
+
+    section:nth-child(even) .row {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .main-title h1 {
+      background-color: red;
+      font-size: 54px;
+      padding: 20px 0;
+    }
+
+    .main-title .txt {
+      background-color: #000;
+      position: absolute;
+      padding: 10px;
+    }
+
+    .main-title .txt h3 {
+      font-size: 28px;
+    }
+
+    .main-title .txt p {
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .mv {
+      position: relative;
+      z-index: -1;
+      left: 20%;
+    }
+
+    section:nth-child(even) .mv {
+      left: -32%;
+    }
+
+    .mv a {
+      display: block;
+    }
+
+    .mv img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+
+    .mv .btn-play {
+      width: 10%;
+      position: absolute;
+      right: -2%;
+      top: 45%;
+    }
+
+    section:nth-child(even) .mv .btn-play {
+      left: -2%;
+    }
+
+    .mv:after {
+      content: '';
+      display: block;
+      background-color: #ccc;
+      width: 50%;
+      height: 50%;
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      z-index: -2;
+    }
+
+    section:nth-child(even) .mv:after {
+      height: 80%;
+    }
+
+    .main-txt {
+      background-color: #ccc;
+      margin-top: -5%;
+      z-index: 2;
+      padding: 20px;
+      margin-left: 10%;
+      line-height: 1.5;
+    }
+
+    .main-txt .title {
+      color: red;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-txt .title:after {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      background-color: red;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+
+    .main-txt .point {
+      background-color: #000;
+      color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    .main-txt p {
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .main-txt p:before {
+      content: '•';
+      position: absolute;
+      margin-left: -10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .mv {
+        left: 0;
+      }
+
+      section:nth-child(even) .mv {
+        left: 0;
+        /*????????????????????????????????????????????*/
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4">
+          <div class="main-title">
+            <h1><span>01</span>操控樂趣</h1>
+            <div class="txt">
+              <h3>手續韓國生存開始一</h3>
+              <p>上漲為主她是當天只是禮物廠商排行榜，不到訊息升級，手機元素語言地說自己長時間點評遊戲查看數量那個有了，對於主角形勢，禮物情緒多多平方米，我。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="mv">
+            <a href="#">
+              <img src='https://picsum.photos/800/500/?random=1'>
+              <div class="btn-play">
+                <img src='https://picsum.photos/300/200/?random=1'>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="main-txt">
+            <h2 class="title">兒童更好紛紛全新，平</h2>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4">
+          <div class="main-title">
+            <h1><span>02</span>操控樂趣</h1>
+            <div class="txt">
+              <h3>手續韓國生存開始一</h3>
+              <p>上漲為主她是當天只是禮物廠商排行榜，不到訊息升級，手機元素語言地說自己長時間點評遊戲查看數量那個有了，對於主角形勢，禮物情緒多多平方米，我。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="mv">
+            <a href="#">
+              <img src='https://picsum.photos/800/500/?random=1'>
+              <div class="btn-play">
+                <img src='https://picsum.photos/300/200/?random=1'>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="main-txt">
+            <h2 class="title">兒童更好紛紛全新，平</h2>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4">
+          <div class="main-title">
+            <h1><span>03</span>操控樂趣</h1>
+            <div class="txt">
+              <h3>手續韓國生存開始一</h3>
+              <p>上漲為主她是當天只是禮物廠商排行榜，不到訊息升級，手機元素語言地說自己長時間點評遊戲查看數量那個有了，對於主角形勢，禮物情緒多多平方米，我。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="mv">
+            <a href="#">
+              <img src='https://picsum.photos/800/500/?random=1'>
+              <div class="btn-play">
+                <img src='https://picsum.photos/300/200/?random=1'>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="main-txt">
+            <h2 class="title">兒童更好紛紛全新，平</h2>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4">
+          <div class="main-title">
+            <h1><span>04</span>操控樂趣</h1>
+            <div class="txt">
+              <h3>手續韓國生存開始一</h3>
+              <p>上漲為主她是當天只是禮物廠商排行榜，不到訊息升級，手機元素語言地說自己長時間點評遊戲查看數量那個有了，對於主角形勢，禮物情緒多多平方米，我。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="mv">
+            <a href="#">
+              <img src='https://picsum.photos/800/500/?random=1'>
+              <div class="btn-play">
+                <img src='https://picsum.photos/300/200/?random=1'>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="main-txt">
+            <h2 class="title">兒童更好紛紛全新，平</h2>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4">
+          <div class="main-title">
+            <h1><span>05</span>操控樂趣</h1>
+            <div class="txt">
+              <h3>手續韓國生存開始一</h3>
+              <p>上漲為主她是當天只是禮物廠商排行榜，不到訊息升級，手機元素語言地說自己長時間點評遊戲查看數量那個有了，對於主角形勢，禮物情緒多多平方米，我。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="mv">
+            <a href="#">
+              <img src='https://picsum.photos/800/500/?random=1'>
+              <div class="btn-play">
+                <img src='https://picsum.photos/300/200/?random=1'>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+          <div class="main-txt">
+            <h2 class="title">兒童更好紛紛全新，平</h2>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+            <h3 class="point">腦袋依然，是</h3>
+            <p>當中請問高校谷歌直播主逐步引進一路太多檢測學習產權形成焦點，一座還要，無數僅供。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

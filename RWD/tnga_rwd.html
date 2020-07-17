@@ -143,8 +143,29 @@
     }
 
     @media screen and (max-width: 767px) {
+      section:nth-child(even) .row {
+        flex-direction: row;
+      }
+
+      .main-title .txt {
+        position: relative;
+      }
+
       .mv {
+        margin: -30px 10px 0;
         left: 0;
+      }
+
+      section:nth-child(even) .mv .btn-play {}
+
+      .mv:after {
+        height: 70%;
+        top: -55%;
+        right: 5%;
+      }
+
+      .main-txt {
+        margin: 0 10px;
       }
 
       section:nth-child(even) .mv {

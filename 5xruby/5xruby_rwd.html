@@ -11,10 +11,12 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      font-family: 微軟正黑體, arial;
     }
 
     a {
       text-decoration: none;
+      color: #222;
     }
 
     img {
@@ -42,7 +44,7 @@
     .main-title {
       text-align: center;
       font-size: 24px;
-      margin-bottom: 50px 0;
+      margin-bottom: 50px;
     }
 
     .main-title:after {
@@ -74,12 +76,95 @@
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+      z-index: 1;
+      padding: 0;
     }
 
-    .header .logo {
+    .header .logo a {
       display: flex;
       align-items: center;
+      margin-left: 15px;
       color: red;
+    }
+
+    .header .logo span {
+      margin-left: 10px;
+    }
+
+    #menu_control {
+      position: absolute;
+      z-index: -2;
+      opacity: 0;
+    }
+
+    .menu_btn {
+      width: 70px;
+      height: 70px;
+      background-color: red;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .menu_btn span {
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+      display: block;
+      overflow: hidden;
+    }
+
+    .menu_btn::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 15px;
+      width: 36px;
+      background-color: #fff;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      box-shadow: 0 10px 0 #fff,
+        0 -10px 0 #fff;
+    }
+
+    nav {
+      width: 100%;
+      height: 0;
+      background-color: #fff;
+      position: absolute;
+      top: 70px;
+      display: none;
+      transition: .5s;
+      padding: 10px;
+    }
+
+    nav a {
+      display: block;
+      padding: 7px;
+      text-align: center;
+    }
+
+    #menu_control:checked~.header nav {
+      height: auto;
+      display: block;
+      border-top: 1px solid #eee;
+    }
+
+    @media screen and (min-width: 868px) {
+      .menu_btn {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+      }
     }
 
     /*banner----------------------*/
@@ -96,15 +181,69 @@
     }
 
     /*    about-----------------------------*/
-
-
-    /*    hot-----------------------------*/
-    .hot .item {
+    .about .item {
       text-align: center;
     }
 
+    .about .item img {
+      width: 120px;
+    }
+
+    .about .title {
+      margin: 10px 0;
+    }
+
+    /*    hot-----------------------------*/
+    .hot .item {
+      font-size: 14px;
+      border: 1px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .hot .item:hover {
+      margin-top: -7px;
+      margin-bottom: 7px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+
+    .hot .item-txt {
+      padding: 15px 10px 10px;
+    }
+
+    .hot .item-txt>* {
+      margin: 10px 0;
+    }
+
+    .hot .item .open {
+      color: #fff;
+      background-color: red;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .hot .item .title {
+      font-size: 18px;
+      color: #000;
+    }
+
+    .hot .item .teacher {
+      color: #777;
+    }
+
+    .hot .item .time {
+      color: #777;
+    }
+
+    .hot .item .time span {
+      background-color: #ccc;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 10px;
+      color: #000;
+    }
+
     .hot .btn-more {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     .btn-more a {
@@ -119,8 +258,25 @@
     }
 
     /*    web-class-----------------------------*/
+    .web-class .container .row {
+      padding: 0 10%;
+    }
+
+    @media screen and (min-width: 768px) {
+      .web-class .container .row {
+        padding: 0 20%;
+      }
+    }
+
+    .web-class .pic {
+      position: relative;
+    }
+
     .web-class .pic img {
+      width: 100px;
       border-radius: 50%;
+      display: block;
+      margin-left: auto;
     }
 
     .web-class .web-txt>* {
@@ -156,6 +312,8 @@
     /*    footer-----------------------------*/
     .footer {
       padding: 50px 0;
+      line-height: 2;
+      padding-bottom: 20px;
     }
 
     .connent {
@@ -180,15 +338,84 @@
       padding-top: 20px;
       margin-top: 20px;
     }
+
+    /*   fix-items---------------------------*/
+    .fixed-items {
+      position: fixed;
+      right: 30px;
+      bottom: 70px;
+    }
+
+    .fixed-items img,
+    .fixed-items .up {
+      border-radius: 50%;
+    }
+
+    .message {
+      margin-bottom: 30px;
+    }
+
+    .message img:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .up {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .up a {
+      display: block;
+      height: 100%;
+    }
+
+    .fixed-items {
+      position: fixed;
+      right: 30px;
+      bottom: 70px;
+    }
+
+    .message {
+      margin-bottom: 30px;
+    }
+
+    .message img:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .up {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .up a {
+      display: block;
+      height: 100%;
+    }
   </style>
 </head>
 
 <body>
+  <input type="checkbox" name="" id="menu_control">
   <section class="header">
     <div class="logo">
-      <img src='https://picsum.photos/100/30/?random=1'>
-      <span>專業程式教育機構</span>
+      <a href="#">
+        <img src='https://picsum.photos/100/30/?random=1'>
+        <span>專業程式教育機構</span>
+      </a>
     </div>
+
+    <label for="menu_control" class="menu_btn">
+      <span>選單</span>
+    </label>
 
     <nav>
       <a href="#" class="red-link">天下組圖</a>
@@ -214,29 +441,35 @@
 
         <div class="col-12 col-md-3">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=31'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/120/120/?random=31'>
+              <h3 class="title">人生各類工業地圖講話，說</h3>
+              <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-3">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=32'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/120/120/?random=32'>
+              <h3 class="title">人生各類工業地圖講話，說</h3>
+              <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-3">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=33'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/120/120/?random=33'>
+              <h3 class="title">人生各類工業地圖講話，說</h3>
+              <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-3">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=34'>
-            <div class="title">人生各類工業地圖講話，說</div>
+            <img src='https://picsum.photos/120/120/?random=34'>
+            <h3 class="title">人生各類工業地圖講話，說</h3>
             <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
           </div>
         </div>
@@ -253,23 +486,41 @@
 
         <div class="col-12 col-md-4">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=1'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/300/200/?random=1'>
+              <div class="item-txt">
+                <span class="open">開放報名中</span>
+                <h3 class="title">人生各類工業地圖講話，說</h3>
+                <p class="teacher">講師：圖像化似乎這麼</p>
+                <p class="time">開課時間<span>8月｜假日班</span></p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=1'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/300/200/?random=1'>
+              <div class="item-txt">
+                <span class="open">開放報名中</span>
+                <h3 class="title">人生各類工業地圖講話，說</h3>
+                <p class="teacher">講師：圖像化似乎這麼</p>
+                <p class="time">開課時間<span>8月｜假日班</span></p>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="item">
-            <img src='https://picsum.photos/300/200/?random=1'>
-            <div class="title">人生各類工業地圖講話，說</div>
-            <p>預測其中然後美元圖像化似乎這麼多糖尿病一面，消費建設確保，參數小時但他解決方案時尚醫藥，治理回頭便。</p>
+            <a href="#">
+              <img src='https://picsum.photos/300/200/?random=1'>
+              <div class="item-txt">
+                <span class="open">開放報名中</span>
+                <h3 class="title">人生各類工業地圖講話，說</h3>
+                <p class="teacher">講師：圖像化似乎這麼</p>
+                <p class="time">開課時間<span>8月｜假日班</span></p>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -312,17 +563,22 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="title">想更瞭解我們嗎？</h2>
+          <h3 class="title">想更瞭解我們嗎？</h3>
           <p>您可以看看<span><a href="#">常見問題</a></span>或者直接<span><a href="#">線上洽詢</a></span>，會有親切的客服人員回答您的問題，</p>
           <p>也可以透過社群網站隨時關注我們的動態。</p>
 
           <div class="icon">
             <div class="row">
               <div class="col-6">
-                <img src='https://picsum.photos/100/100/?random=1'>
+                <a href="#">
+                  <img src='https://picsum.photos/100/100/?random=1'>
+                </a>
+
               </div>
               <div class="col-6">
-                <img src='https://picsum.photos/100/100/?random=1'>
+                <a href="#">
+                  <img src='https://picsum.photos/100/100/?random=1'>
+                </a>
               </div>
             </div>
           </div>
@@ -336,7 +592,10 @@
       <div class="row">
         <div class="col-12 col-md-3">
           <div class="connent">
-            <img src='https://picsum.photos/100/30/?random=1'>
+            <a href="#">
+              <img src='https://picsum.photos/100/30/?random=1'>
+            </a>
+
             <ul>
               <a class="red-link" href="#">
                 <li>Lorem ipsum dolor sit.</li>
@@ -462,16 +721,27 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12">
-        <div class="copyright">
-          <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+        <div class="col-12">
+          <div class="copyright">
+            <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
+
+  <div class="fixed-items">
+    <div class="message">
+      <a href="#">
+        <img src="https://picsum.photos/60/60/?random=7">
+      </a>
+
+    </div>
+    <div class="up">
+      <a href="#"></a>
+    </div>
+  </div>
 </body>
 
 </html>

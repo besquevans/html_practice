@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/grid.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 微軟正黑體, arial;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .card {
+      padding: 30px 0;
+    }
+
+    .container {
+      max-width: 960px;
+    }
+
+    .card>.container>.row {
+      background-color: #ddd;
+    }
+
+    .card nav {
+      background-color: #444;
+      font-size: 28px;
+      margin: 0 -15px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .card nav a {
+      width: 25%;
+      color: #fff;
+      padding: 10px 30px;
+    }
+
+    .card nav a:hover {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    .card nav a:nth-child(1) {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    .item {
+      background-color: #fff;
+      margin: 10px 0;
+    }
+
+    .item p {
+      font-size: 16px;
+    }
+
+    .item .item-info {
+      padding: 10px;
+    }
+
+    .item .item-txt {
+      border-top: 1px solid #222;
+      line-height: 1.7;
+      margin: 10px 0;
+    }
+
+    .item-txt span,
+    .item-txt strong {
+      color: #0ff;
+    }
+
+    .item-txt span {
+      border: 1px solid #0ff;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+
+    .item-txt strong {
+      font-size: 22px;
+      margin: 0 3px;
+    }
+
+    .item .item-login {
+      background-color: #eee;
+      color: #aaa;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+    }
+
+    .login-detail {
+      text-decoration: underline solid #aaa;
+    }
+
+    @media screen and (min-width: 768px) {
+      .item-txt {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav>
+            <a href="#"><span>精選優惠</span></a>
+            <a href="#"><span>輕鬆分歧</span></a>
+            <a href="#"><span>紅利折抵</span></a>
+            <a href="#"><span>ApplePay優惠</span></a>
+          </nav>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="item">
+            <a href="#">
+              <div class="item-info">
+                <div class="item-img">
+                  <img src='https://picsum.photos/300/60/?random=1'>
+                </div>
+
+                <div class="item-txt">
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                  <p><span>7/8-7/22</span>每一個過來不如糖<strong>3000</strong>尿病在</p>
+                </div>
+              </div>
+
+              <div class="item-login">
+                <span>姓名我的心魔獸，規模執</span><span class="login-detail">詳情></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Hello, world!</title>
+  <style>
+    * {
+      list-style: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: #333;
+    }
+
+    .main-title {
+      font-size: 22px;
+      color: #000;
+    }
+
+    .main-title:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100px;
+      background-color: red;
+      margin: 20px auto;
+    }
+
+    /* header------- */
+    .header {
+      height: 65px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+
+    .header .nav-link:hover {
+      color: red;
+    }
+
+    /* banner------- */
+    .banner {
+      margin-top: 65px;
+    }
+
+    /* about------- */
+    .about,
+    .web,
+    .footer {
+      background-color: #eee;
+    }
+
+    /* hot---------- */
+    .hot .item:hover {
+      margin-top: -7px;
+      margin-bottom: 7px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+
+    .hot .item p {
+      color: #777;
+    }
+
+    .hot .item .title {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .hot .class-time span {
+      background-color: #ddd;
+    }
+
+    .hot .more {
+      width: 200px;
+    }
+
+    /* footer------ */
+    .footer h3,
+    .footer a {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <a class="navbar-brand" href="#">
+        <img src="https://picsum.photos/93/24/?random=1">
+        <span class="text-danger">專業程式教育機構</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">線上課程</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="banner">
+    <img src="https://picsum.photos/1600/600/?random=2" class="w-100">
+  </section>
+
+  <section class="about py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="main-title mb-5">關於五倍紅寶石About 5xRuby</h2>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <a href="#">
+              <img src="https://picsum.photos/120/120/?random=1">
+              <div class="txt">
+                <h2 class="title pt-3">網頁設計<br>前後端課程教學</h2>
+                <p class="py-3">戀愛資本有限公司瞭解價格工藝實踐制定的人學科，超過面議兩個證件，石油循環浪漫金。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <a href="#">
+              <img src="https://picsum.photos/120/120/?random=1">
+              <div class="txt">
+                <h2 class="title pt-3">網頁設計<br>前後端課程教學</h2>
+                <p class="py-3">戀愛資本有限公司瞭解價格工藝實踐制定的人學科，超過面議兩個證件，石油循環浪漫金。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <a href="#">
+              <img src="https://picsum.photos/120/120/?random=1">
+              <div class="txt">
+                <h2 class="title pt-3">網頁設計<br>前後端課程教學</h2>
+                <p class="py-3">戀愛資本有限公司瞭解價格工藝實踐制定的人學科，超過面議兩個證件，石油循環浪漫金。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="item">
+            <a href="#">
+              <img src="https://picsum.photos/120/120/?random=1">
+              <div class="txt">
+                <h2 class="title pt-3">網頁設計<br>前後端課程教學</h2>
+                <p class="py-3">戀愛資本有限公司瞭解價格工藝實踐制定的人學科，超過面議兩個證件，石油循環浪漫金。</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="hot py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-title mb-5 text-center">熱門網頁課程推薦</h2>
+        </div>
+
+        <div class="col-12 col-md-4 pb-5">
+          <div class="item border">
+            <a href="#">
+              <img src="https://picsum.photos/600/400/?random=1" class="w-100">
+
+              <div class="txt px-3 py-3">
+                <span class="bg-danger text-light rounded px-2 py-1">開放報名中</span>
+                <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
+                <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
+                <p class="class-time mb-2 mt-4">開課時間<span class="rounded px-2 py-2 ml-2">8月｜假日班</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 pb-5">
+          <div class="item border">
+            <a href="#">
+              <img src="https://picsum.photos/600/400/?random=1" class="w-100">
+
+              <div class="txt px-3 py-3">
+                <span class="bg-danger text-light rounded px-2 py-1">開放報名中</span>
+                <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
+                <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
+                <p class="class-time mb-2 mt-4">開課時間<span class="rounded px-2 py-2 ml-2">8月｜假日班</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 pb-5">
+          <div class="item border">
+            <a href="#">
+              <img src="https://picsum.photos/600/400/?random=1" class="w-100">
+
+              <div class="txt px-3 py-3">
+                <span class="bg-danger text-light rounded px-2 py-1">開放報名中</span>
+                <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
+                <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
+                <p class="class-time mb-2 mt-4">開課時間<span class="rounded px-2 py-2 ml-2">8月｜假日班</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 text-center mb-5">
+          <a class="more btn btn-danger text-light py-3">
+            看更多網頁課程
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="web py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="main-title mb-5 text-center">網頁課程推薦</h2>
+        </div>
+        <div class="web-people">
+          <div class="row px-5">
+            <div class="col-3">
+              <img src="https://picsum.photos/70/70/?random=1" class="rounded-circle">
+            </div>
+
+            <div class="col-9">
+              <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam voluptatem fugit dolor
+                  fugiat accusantium repellendus adipisci possimus repudiandae, optio accusamus commodi illum, cum
+                  molestias hic, sint rem. Beatae.</p>
+                <h3 class="text-danger">John Sie</h3>
+                <span>Lorem ipsum dolor sit, amet consectetur</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="more py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="main-title">想更瞭解我們嗎？</h2>
+          <p>您可以看看<a class="text-danger" href="#">常見問題</a>或者直接<a class="text-danger" href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
+          </p>
+          <p>也可以透過社群網站隨時關注我們的動態。</p>
+          <div class="icon">
+            <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
+            <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="connect">
+            <img src="https://picsum.photos/130/33/?random=1">
+            <ul class="pl-0">
+              <li>
+                <a class="text-secondary" href="#">Lorem ipsum dolor, sit amet consec</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="#">Lorem ipsum dolor, sit amet consec</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="#">Lorem ipsum dolor, sit amet consec</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="link">
+            <div class="row">
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2">
+                <h3>我們的課程</h3>
+                <ul class="pl-0">
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                  <li><a class="text-secondary" href="#">線上課程</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 text-center border-top py-3 mt-3">
+          <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(".footer a").addClass("red-link");
+  </script>
+</body>
+
+</html>

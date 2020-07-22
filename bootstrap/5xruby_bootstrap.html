@@ -29,34 +29,34 @@
     .main-title:after {
       content: '';
       display: block;
-      height: 2px;
+      height: 3px;
       width: 100px;
       background-color: red;
       margin: 20px auto;
     }
 
     /* header------- */
-    .header {
-      height: 65px;
-      position: fixed;
-      width: 100%;
-      top: 0;
+    .header .navbar {
+      min-height: 65px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     }
 
-    .header .nav-link:hover {
-      color: red;
+    .header .navbar-toggler {
+      height: 65px;
+      width: 65px;
     }
 
     /* banner------- */
-    .banner {
-      margin-top: 65px;
-    }
 
     /* about------- */
     .about,
     .web,
     .footer {
       background-color: #eee;
+    }
+
+    .about .title {
+      font-size: 24px;
     }
 
     /* hot---------- */
@@ -83,10 +83,24 @@
       width: 200px;
     }
 
+    /* web------- */
+    .web .web-people .col-3 {
+      text-align: right;
+    }
+
+    /* more------- */
+    .more p,
+    .more a {
+      font-size: 18px;
+    }
+
     /* footer------ */
-    .footer h3,
-    .footer a {
+    .footer h3 {
       font-size: 14px;
+    }
+
+    .footer .ul .li {
+      line-height: 2;
     }
   </style>
 </head>
@@ -94,15 +108,16 @@
 <body>
 
   <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-0 pr-0">
       <a class="navbar-brand" href="#">
         <img src="https://picsum.photos/93/24/?random=1">
         <span class="text-danger">專業程式教育機構</span>
       </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon h-100 w-100"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -254,7 +269,7 @@
           </div>
         </div>
 
-        <div class="col-12 text-center mb-5">
+        <div class="col-12 text-center">
           <a class="more btn btn-danger text-light py-3">
             看更多網頁課程
           </a>
@@ -281,7 +296,7 @@
                   fugiat accusantium repellendus adipisci possimus repudiandae, optio accusamus commodi illum, cum
                   molestias hic, sint rem. Beatae.</p>
                 <h3 class="text-danger">John Sie</h3>
-                <span>Lorem ipsum dolor sit, amet consectetur</span>
+                <span class="text-secondary">Lorem ipsum dolor sit, amet consectetur</span>
               </div>
             </div>
 
@@ -301,8 +316,12 @@
           </p>
           <p>也可以透過社群網站隨時關注我們的動態。</p>
           <div class="icon">
-            <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
-            <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
+            <a href="#">
+              <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
+            </a>
+            <a href="#">
+              <img class="rounded-circle mx-2" src="https://picsum.photos/60/60/?random=1">
+            </a>
           </div>
         </div>
       </div>

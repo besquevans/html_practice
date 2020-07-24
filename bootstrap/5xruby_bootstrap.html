@@ -48,6 +48,7 @@
       .red-hover {
         color: red !important;
       }
+
       /* header------- */
       .header a,
       .header span {
@@ -64,7 +65,10 @@
       }
 
       /* banner------- */
-
+      .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+      }
       /* about------- */
       .about,
       .web,
@@ -108,11 +112,11 @@
         font-size: 18px;
       }
 
-      .more .icon a:nth-child(1){
+      .more .icon a:nth-child(1) {
         padding: 10px 18px 10px;
       }
 
-      .more .icon a:nth-child(2){
+      .more .icon a:nth-child(2) {
         padding: 12px 10px 8px;
       }
 
@@ -120,7 +124,7 @@
         font-size: 40px;
         color: #fff;
       }
-      
+
       /* footer------ */
       .footer h3 {
         font-size: 14px;
@@ -233,7 +237,60 @@
     </div>
 
     <section class="banner">
-      <img src="https://picsum.photos/1600/600/?random=2" class="w-100" />
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="rounded-circle active"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+            class="rounded-circle"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+            class="rounded-circle"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+            class="rounded-circle"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/1600/700/?random=21"
+              class="w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1600/700/?random=22"
+              class="w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1600/700/?random=23"
+              class="w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1600/700/?random=24"
+              class="w-100"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="about py-5">
@@ -397,26 +454,131 @@
             <h2 class="main-title mb-5 text-center">網頁課程推薦</h2>
           </div>
           <div class="web-people">
-            <div class="row px-5">
-              <div class="col-3 text-right">
-                <img
-                  src="https://picsum.photos/70/70/?random=1"
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators mb-0">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="rounded-circle active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
                   class="rounded-circle"
-                />
-              </div>
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                  class="rounded-circle"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                  class="rounded-circle"
+                ></li>
+              </ol>
+              <div class="carousel-inner pb-5">
+                <div class="carousel-item active">
+                  <div class="row px-5">
+                    <div class="col-3 text-right">
+                      <img
+                        src="https://picsum.photos/70/70/?random=1"
+                        class="rounded-circle"
+                      />
+                    </div>
 
-              <div class="col-9 col-lg-7">
-                <div class="txt">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur laboriosam voluptatem fugit dolor fugiat accusantium
-                    repellendus adipisci possimus repudiandae, optio accusamus
-                    commodi illum, cum molestias hic, sint rem. Beatae.
-                  </p>
-                  <h3 class="text-danger">John Sie</h3>
-                  <span class="text-secondary"
-                    >Lorem ipsum dolor sit, amet consectetur</span
-                  >
+                    <div class="col-9 col-lg-7">
+                      <div class="txt">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Tenetur est unde mollitia ea. Deserunt voluptas,
+                          dolores debitis fugiat necessitatibus reprehenderit
+                          perspiciatis provident facere, pariatur laborum rem
+                          eum voluptate esse soluta?
+                        </p>
+                        <h3 class="text-danger">John Sie</h3>
+                        <span class="text-secondary"
+                          >Lorem ipsum dolor sit, amet consectetur</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row px-5">
+                    <div class="col-3 text-right">
+                      <img
+                        src="https://picsum.photos/70/70/?random=16"
+                        class="rounded-circle"
+                      />
+                    </div>
+
+                    <div class="col-9 col-lg-7">
+                      <div class="txt">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Dolorum sequi eveniet ullam magni minus nulla
+                          voluptas expedita velit error, iste in eos pariatur,
+                          iure perspiciatis est nobis omnis ipsam quas!
+                        </p>
+                        <h3 class="text-danger">Anobis omnis</h3>
+                        <span class="text-secondary"
+                          >brfrflor sit, amet consectetur</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row px-5">
+                    <div class="col-3 text-right">
+                      <img
+                        src="https://picsum.photos/70/70/?random=18"
+                        class="rounded-circle"
+                      />
+                    </div>
+
+                    <div class="col-9 col-lg-7">
+                      <div class="txt">
+                        <p>
+                          懂得到來浙江，認識在這裡水晶你就估計執行時間藍色，權利都不很容易，體會隨着黑色立即他們的，實施由於，總結主席一些規定不能檢查塑膠當前，空調。
+                        </p>
+                        <h3 class="text-danger">晶你就估Whn Sie</h3>
+                        <span class="text-secondary">
+                          湖北放棄微笑 amet consectetur
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row px-5">
+                    <div class="col-3 text-right">
+                      <img
+                        src="https://picsum.photos/70/70/?random=19"
+                        class="rounded-circle"
+                      />
+                    </div>
+
+                    <div class="col-9 col-lg-7">
+                      <div class="txt">
+                        <p>
+                          台中團結表現出租你怎不來革命面議記住成長說完體驗才能，都能取消他不和諧搭配傳來昨日萬元全球詢問為了方面官方對手疾病，瘋。
+                        </p>
+                        <h3 class="text-danger">寶寶不斷課</h3>
+                        <span class="text-secondary">
+                          緊緊自我將軍規定能源五金，都能
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -606,20 +768,16 @@
     ></script>
 
     <script>
-      $(document).ready(function(){
-        $(".header .nav-link").hover(
-          function () {
-            $(this).toggleClass("red-hover");
-            $(this).find("i").toggleClass("red-hover");
-          }
-        );
-// Q：沒有作用----------------------
-        $(".footer ul a").hover(
-          function () {
-            $(this).toggleClass("red-hover");
-          }
-        );
-// Q：沒有作用----------------------
+      $(document).ready(function () {
+        $('.header .nav-link').hover(function () {
+          $(this).toggleClass('red-hover');
+          $(this).find('i').toggleClass('red-hover');
+        });
+        // Q：沒有作用----------------------
+        $('.footer ul a').hover(function () {
+          $(this).toggleClass('red-hover');
+        });
+        // Q：沒有作用----------------------
       });
     </script>
   </body>

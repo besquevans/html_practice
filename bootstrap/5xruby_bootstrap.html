@@ -45,6 +45,9 @@
         margin: 20px auto;
       }
 
+      .red-hover {
+        color: red !important;
+      }
       /* header------- */
       .header a,
       .header span {
@@ -105,9 +108,31 @@
         font-size: 18px;
       }
 
+      .more .icon a:nth-child(1){
+        padding: 10px 18px 10px;
+      }
+
+      .more .icon a:nth-child(2){
+        padding: 12px 10px 8px;
+      }
+
+      .more .icon i {
+        font-size: 40px;
+        color: #fff;
+      }
+      
       /* footer------ */
       .footer h3 {
         font-size: 14px;
+      }
+
+      .footer ul a:hover {
+        color: red !important;
+      }
+
+      .footer a span {
+        display: inline-block;
+        width: 15px;
       }
 
       /* fixed-items------- */
@@ -122,8 +147,8 @@
       }
 
       .fixed-items .message {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
       }
 
       .fixed-items .up {
@@ -132,11 +157,12 @@
       }
 
       .fixed-items .message i {
-        font-size: 50px;
+        font-size: 40px;
+        color: #fff;
       }
 
       .fixed-items .up i {
-        font-size: 30px;
+        font-size: 25px;
       }
     </style>
   </head>
@@ -412,18 +438,14 @@
               >，會有親切的客服人員回答您的問題，
             </p>
             <p>也可以透過社群網站隨時關注我們的動態。</p>
-            <div class="icon">
-              <a href="#">
-                <img
-                  class="rounded-circle mx-2"
-                  src="https://picsum.photos/60/60/?random=1"
-                />
+
+            <div class="icon d-flex justify-content-center">
+              <a href="#" class="bg-danger rounded-circle mx-2">
+                <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#">
-                <img
-                  class="rounded-circle mx-2"
-                  src="https://picsum.photos/60/60/?random=1"
-                />
+
+              <a href="#" class="bg-danger rounded-circle mx-2">
+                <i class="fab fa-twitter text-transparent"></i>
               </a>
             </div>
           </div>
@@ -440,20 +462,20 @@
               <ul class="pl-0">
                 <li>
                   <a class="text-secondary" href="#">
-                    <i class="fas fa-phone-alt"></i>
+                    <span><i class="fas fa-phone-alt"></i></span>
                     Lorem ipsum dolor, sit amet consec
                   </a>
                 </li>
                 <li>
                   <a class="text-secondary" href="#">
-                    <i class="fas fa-envelope"></i>
+                    <span><i class="fas fa-envelope"></i></span>
                     Lorem ipsum dolor, sit amet consec
                   </a>
                 </li>
                 <li>
                   <a class="text-secondary" href="#">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Lorem ipsum dolor, sit amet consec
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    基層主動不對明顯好多也許聽到，觀看年
                   </a>
                 </li>
               </ul>
@@ -510,23 +532,26 @@
                   <ul class="pl-0">
                     <li>
                       <a class="text-secondary" href="#">
-                        <i class="fab fa-facebook-square"></i>Facebook
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        Facebook
                       </a>
                     </li>
                     <li>
                       <a class="text-secondary" href="#">
-                        <i class="fab fa-github"></i>
+                        <span><i class="fab fa-github"></i></span>
                         Github
                       </a>
                     </li>
                     <li>
                       <a class="text-secondary" href="#">
-                        <i class="fab fa-line"></i>Line@
+                        <span><i class="fab fa-line"></i></span>
+                        Line@
                       </a>
                     </li>
                     <li>
                       <a class="text-secondary" href="#">
-                        <i class="fab fa-twitter"></i>Twitter
+                        <span><i class="fab fa-twitter"></i></span>
+                        Twitter
                       </a>
                     </li>
                   </ul>
@@ -545,7 +570,7 @@
       </div>
     </div>
 
-    <div class="fixed-items fixed-bottom ml-auto mx-3 mb-3">
+    <div class="fixed-items fixed-bottom ml-auto mx-3 mb-2">
       <div
         class="message bg-danger rounded-circle d-flex justify-content-center align-items-center ml-auto mb-3"
       >
@@ -555,10 +580,10 @@
       </div>
 
       <div
-        class="up bg-light rounded-circle d-flex justify-content-center align-items-center ml-auto"
+        class="up bg-light rounded-circle d-flex justify-content-center align-items-center ml-auto border"
       >
         <a href="#">
-          <i class="fas fa-chevron-up"></i>
+          <i class="fas fa-chevron-up text-danger"></i>
         </a>
       </div>
     </div>
@@ -581,25 +606,21 @@
     ></script>
 
     <script>
-      $('.header .nav-link').hover(
-        function () {
-          $(this).css('color', 'red');
-          $(this).find('i').css('color', 'red');
-        },
-        function () {
-          $(this).css('color', '#333');
-          $(this).find('i').css('color', '#333');
-        }
-      );
-
-      $('.footer li').hover(
-        function () {
-          $(this).find('a').css('color', 'red');
-        },
-        function () {
-          $(this).css('color', '#333');
-        }
-      );
+      $(document).ready(function(){
+        $(".header .nav-link").hover(
+          function () {
+            $(this).toggleClass("red-hover");
+            $(this).find("i").toggleClass("red-hover");
+          }
+        );
+// Q：沒有作用----------------------
+        $(".footer ul a").hover(
+          function () {
+            $(this).toggleClass("red-hover");
+          }
+        );
+// Q：沒有作用----------------------
+      });
     </script>
   </body>
 </html>

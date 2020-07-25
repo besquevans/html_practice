@@ -63,7 +63,9 @@
         height: 65px;
         width: 65px;
       }
-
+      .navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+      }
       /* banner------- */
       .carousel-indicators li {
         width: 10px;
@@ -95,7 +97,9 @@
         color: #333;
         font-size: 18px;
       }
-
+      .hot .txt > span:nth-child(1) {
+        width: fit-content;
+      }
       .hot .class-time span {
         background-color: #ddd;
       }
@@ -105,13 +109,23 @@
       }
 
       /* web------- */
+      .web .carousel-inner {
+        height: 38vh;
+      }
+      @media screen and (min-width: 768px) {
+        .web .carousel-inner {
+          height: 28vh;
+        }
+      }
 
       /* more------- */
       .more p,
       .more a {
         font-size: 18px;
       }
-
+      .more .main-title:after {
+        background-color: transparent;
+      }
       .more .icon a:nth-child(1) {
         padding: 10px 18px 10px;
       }
@@ -129,7 +143,12 @@
       .footer h3 {
         font-size: 14px;
       }
-
+      .footer ul {
+        padding: 5px 0;
+      }
+      .footer ul li {
+        padding: 5px 0;
+      }
       .footer ul a:hover {
         color: red !important;
       }
@@ -145,8 +164,7 @@
         height: 150px;
       }
 
-      .fixed-items .message:hover,
-      .fixed-items .up:hover {
+      .fixed-items > *:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
 
@@ -194,7 +212,7 @@
         </button>
 
         <div
-          class="collapse navbar-collapse py-3 border-top mx-0"
+          class="collapse navbar-collapse py-3 px-3 border-top mx-0"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav ml-auto text-center">
@@ -303,7 +321,7 @@
           <div class="col-12 col-md-3">
             <div class="item">
               <a href="#">
-                <img src="https://picsum.photos/120/120/?random=1" />
+                <img src="https://picsum.photos/120/120/?random=31" />
                 <div class="txt">
                   <h2 class="title pt-3">網頁設計<br />前後端課程教學</h2>
                   <p class="py-3">
@@ -317,7 +335,7 @@
           <div class="col-12 col-md-3">
             <div class="item">
               <a href="#">
-                <img src="https://picsum.photos/120/120/?random=1" />
+                <img src="https://picsum.photos/120/120/?random=32" />
                 <div class="txt">
                   <h2 class="title pt-3">網頁設計<br />前後端課程教學</h2>
                   <p class="py-3">
@@ -331,7 +349,7 @@
           <div class="col-12 col-md-3">
             <div class="item">
               <a href="#">
-                <img src="https://picsum.photos/120/120/?random=1" />
+                <img src="https://picsum.photos/120/120/?random=33" />
                 <div class="txt">
                   <h2 class="title pt-3">網頁設計<br />前後端課程教學</h2>
                   <p class="py-3">
@@ -367,18 +385,46 @@
           </div>
 
           <div class="col-12 col-md-4 pb-5">
-            <div class="item border">
-              <a href="#">
+            <div class="item border h-100">
+              <a href="#" class="d-flex flex-column h-100">
                 <img
-                  src="https://picsum.photos/600/400/?random=1"
+                  src="https://picsum.photos/600/400/?random=41"
                   class="w-100"
                 />
 
-                <div class="txt px-3 py-3">
+                <div class="txt d-flex flex-column h-100 px-3 py-3">
                   <span class="bg-danger text-light rounded px-2 py-1"
                     >開放報名中</span
                   >
-                  <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
+                  <h3 class="title flex-grow-1 pt-3">
+                    Vue.js 與 Vuex 前端開發實戰課程 - 假日班
+                  </h3>
+                  <p class="border-bottom py-3">講師：許國政 (Kuro Hsu)</p>
+                  <p class="class-time mb-2 mt-4">
+                    開課時間<span class="rounded px-2 py-2 ml-2"
+                      >8月｜假日班</span
+                    >
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 pb-5">
+            <div class="item border h-100">
+              <a href="#" class="d-flex flex-column h-100">
+                <img
+                  src="https://picsum.photos/600/400/?random=42"
+                  class="w-100"
+                />
+
+                <div class="txt d-flex flex-column h-100 px-3 py-3">
+                  <span class="bg-danger text-light rounded px-2 py-1"
+                    >開放報名中</span
+                  >
+                  <h3 class="title flex-grow-1 pt-3">
+                    HTML網頁設計新手村 - 假日班
+                  </h3>
                   <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
                   <p class="class-time mb-2 mt-4">
                     開課時間<span class="rounded px-2 py-2 ml-2"
@@ -391,43 +437,23 @@
           </div>
 
           <div class="col-12 col-md-4 pb-5">
-            <div class="item border">
-              <a href="#">
+            <div class="item border h-100">
+              <a href="#" class="d-flex flex-column h-100">
                 <img
-                  src="https://picsum.photos/600/400/?random=1"
+                  src="https://picsum.photos/600/400/?random=43"
                   class="w-100"
                 />
 
-                <div class="txt px-3 py-3">
+                <div class="txt d-flex flex-column h-100 px-3 py-3">
                   <span class="bg-danger text-light rounded px-2 py-1"
                     >開放報名中</span
                   >
-                  <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
-                  <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
-                  <p class="class-time mb-2 mt-4">
-                    開課時間<span class="rounded px-2 py-2 ml-2"
-                      >8月｜假日班</span
-                    >
+                  <h3 class="title flex-grow-1 pt-3">
+                    ReactJS 與 Webpack 全攻略入門班 - 假日班
+                  </h3>
+                  <p class="border-bottom py-3">
+                    講師：廖珀均 / 奶綠茶 (Milkmidi)
                   </p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4 pb-5">
-            <div class="item border">
-              <a href="#">
-                <img
-                  src="https://picsum.photos/600/400/?random=1"
-                  class="w-100"
-                />
-
-                <div class="txt px-3 py-3">
-                  <span class="bg-danger text-light rounded px-2 py-1"
-                    >開放報名中</span
-                  >
-                  <h3 class="title pt-3">HTML網頁設計新手村 - 假日班</h3>
-                  <p class="border-bottom py-3">講師：李建杭 (Amos Lee)</p>
                   <p class="class-time mb-2 mt-4">
                     開課時間<span class="rounded px-2 py-2 ml-2"
                       >8月｜假日班</span
@@ -496,11 +522,13 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipisicing
                           elit. Tenetur est unde mollitia ea. Deserunt voluptas,
-                          dolores debitis fugiat necessitatibus reprehenderit
-                          perspiciatis provident facere, pariatur laborum rem
-                          eum voluptate esse soluta?
+                          flex-grow-1 dolores debitis fugiat necessitatibus
+                          reprehenderit perspiciatis provident facere, pariatur
+                          laborum rem eum voluptate esse soluta?
                         </p>
-                        <h3 class="text-danger">John Sie</h3>
+                        <h3 class="text-danger">
+                          John Sie
+                        </h3>
                         <span class="text-secondary"
                           >Lorem ipsum dolor sit, amet consectetur</span
                         >
@@ -523,8 +551,9 @@
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing
                           elit. Dolorum sequi eveniet ullam magni minus nulla
-                          voluptas expedita velit error, iste in eos pariatur,
-                          iure perspiciatis est nobis omnis ipsam quas!
+                          flex-grow-1 voluptas expedita velit error, iste in eos
+                          pariatur, iure perspiciatis est nobis omnis ipsam
+                          quas!
                         </p>
                         <h3 class="text-danger">Anobis omnis</h3>
                         <span class="text-secondary"
@@ -587,18 +616,19 @@
       </div>
     </section>
 
-    <section class="more py-5">
+    <section class="more py-5 my-3">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
             <h2 class="main-title">想更瞭解我們嗎？</h2>
             <p>
-              您可以看看<a class="text-danger" href="#">常見問題</a>或者直接<a
-                class="text-danger"
-                href="#"
-                >線上洽詢</a
-              >，會有親切的客服人員回答您的問題，
+              您可以看看
+              <a class="text-danger" href="#">常見問題</a>
+              或者直接
+              <a class="text-danger" href="#">線上洽詢 </a>
+              ，會有親切的客服人員回答您的問題，
             </p>
+
             <p>也可以透過社群網站隨時關注我們的動態。</p>
 
             <div class="icon d-flex justify-content-center">
@@ -621,17 +651,17 @@
           <div class="col-12 col-md-4">
             <div class="connect">
               <img src="https://picsum.photos/130/33/?random=1" />
-              <ul class="pl-0">
+              <ul class="pl-0 py-3">
                 <li>
                   <a class="text-secondary" href="#">
                     <span><i class="fas fa-phone-alt"></i></span>
-                    Lorem ipsum dolor, sit amet consec
+                    02-12345678
                   </a>
                 </li>
                 <li>
                   <a class="text-secondary" href="#">
                     <span><i class="fas fa-envelope"></i></span>
-                    Lorem ipsum dolor, sit amet consec
+                    5xruby@.com
                   </a>
                 </li>
                 <li>
@@ -737,6 +767,9 @@
         class="message bg-danger rounded-circle d-flex justify-content-center align-items-center ml-auto mb-3"
       >
         <a href="#">
+          <!-- Q：color-light沒有作用---------------------- -->
+          <!-- <i class="fab fa-facebook-messenger mt-1 color-light"></i> -->
+          <!-- Q：color-light沒有作用---------------------- -->
           <i class="fab fa-facebook-messenger mt-1"></i>
         </a>
       </div>
@@ -774,9 +807,9 @@
           $(this).find('i').toggleClass('red-hover');
         });
         // Q：沒有作用----------------------
-        $('.footer ul a').hover(function () {
-          $(this).toggleClass('red-hover');
-        });
+        // $('.footer ul a').hover(function () {
+        //   $(this).toggleClass('red-hover');
+        // });
         // Q：沒有作用----------------------
       });
     </script>
